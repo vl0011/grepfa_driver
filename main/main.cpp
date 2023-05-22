@@ -1,5 +1,7 @@
 #include <iostream>
 #include <log.h>
+#include <bootstrap.h>
+#include <motor_io.h>
 #include "pico/stdlib.h"
 
 int main() {
@@ -10,8 +12,14 @@ int main() {
 
     log_info("program start...");
 
+    auto m1 = Motor::NewMotor(0, 18, 19);
+
     while(true) {
-        log_info("11111");
+        m1->do_forward();
+        sleep_ms(1000);
+        m1->do_reverse();
+        sleep_ms(1000);
+        m1->motor_stop();
         sleep_ms(1000);
     }
 
