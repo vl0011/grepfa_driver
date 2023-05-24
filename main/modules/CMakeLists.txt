@@ -1,3 +1,3 @@
 add_subdirectory(motor_io)
-add_subdirectory(button_io)
+add_subdirectory(sw_xtoy)
 add_subdirectory(bootstrap)

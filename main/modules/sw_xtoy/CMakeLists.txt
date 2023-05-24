@@ -1,4 +1,4 @@
-set(LIBRARY_NAME button_io)
+set(LIBRARY_NAME sw_xtoy)
 
 add_library(
         ${LIBRARY_NAME}

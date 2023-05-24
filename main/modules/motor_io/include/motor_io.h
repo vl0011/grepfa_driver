@@ -28,7 +28,7 @@ private:
 
 public:
 
-    /**
+    /**r
      *
      * @param forward - 정방향 GPIO
      * @param reverse - 역방향 GPIO
